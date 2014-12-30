@@ -1,0 +1,17 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "name": "Ext5OpenLayers3",
+        "views": [
+            "MainView",
+            "OpenLayers3"
+        ]
+    },
+    "name": "Application",
+    "designerId": "application"
+}

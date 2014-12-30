@@ -1,0 +1,124 @@
+{
+    "type": "Ext.Component",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "openlayers3",
+        "designer|userClassName": "OpenLayers3",
+        "html": [
+            "<div id=\"map\"></div>"
+        ],
+        "layers": [
+            "[]"
+        ],
+        "view": [
+            "{}"
+        ]
+    },
+    "name": "MyComponent",
+    "configAlternates": {
+        "layers": "array",
+        "view": "object"
+    },
+    "designerId": "b6f444ad-f5c5-4841-9740-6aa445d33c5b",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "layers",
+            "type": "string"
+        },
+        {
+            "group": "(Custom Properties)",
+            "name": "view",
+            "type": "string"
+        }
+    ],
+    "viewControllerInstanceId": "005d493c-4ac9-43dd-8dc8-02ca5b880fca",
+    "viewModelInstanceId": "399f90c5-5532-4b18-8bd0-ba1bfd56fcef",
+    "cn": [
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onMapAfterRender",
+                "implHandler": [
+                    "var me = this;",
+                    "",
+                    "//set default view",
+                    "Ext.applyIf(me.config.view, {",
+                    "    projection: 'EPSG:3857',",
+                    "    center: ol.proj.transform([-100, 40.00], 'EPSG:4326', 'EPSG:3857'),",
+                    "    zoom: 5,",
+                    "    minZoom: 0,",
+                    "    maxZoom: 16",
+                    "});",
+                    "",
+                    "//set default base layer OSM",
+                    "Ext.applyIf(me.config.layers, [",
+                    "    new ol.layer.Tile({",
+                    "        source: new ol.source.OSM()",
+                    "    })",
+                    "]);",
+                    "",
+                    "//render map",
+                    "this.map = new ol.Map({",
+                    "    target: 'map',",
+                    "    renderer: 'canvas',",
+                    "    layers: me.config.layers,",
+                    "    view : new ol.View(me.config.view)",
+                    "});",
+                    "",
+                    "",
+                    "//Fire event",
+                    "me.fireEvent('mapRender', this.map);"
+                ],
+                "name": "afterrender",
+                "scope": "me"
+            },
+            "name": "onMapAfterRender",
+            "designerId": "c2286c79-fa0c-42b9-8ec0-350173d098cd"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onMapResize",
+                "implHandler": [
+                    "if(this.map)",
+                    "    this.map.setSize([width, height]);"
+                ],
+                "name": "resize",
+                "scope": "me"
+            },
+            "name": "onMapResize",
+            "designerId": "ffb4d630-4cc3-4d32-b812-147985fcfbf3"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "getMap",
+                "implHandler": [
+                    "return this.map;"
+                ]
+            },
+            "name": "getMap",
+            "designerId": "8349893a-85b6-461d-a0d1-2ed6ade3d841"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "name": "Ext5OpenLayers3",
+    "settings": {
+        "cmd": {},
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "urlPrefix": "",
+        "exportPath": "/Volumes/10.10.0.202/Ext5OpenLayers3",
+        "lockUrlPrefix": true,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "spacesToIndent": 4,
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "installStatus": "Not Installed"
+    },
+    "xdsVersion": "3.1.0",
+    "xdsBuild": 1943,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000007,
+    "framework": "ext50",
+    "viewOrderMap": {
+        "view": [
+            "ccf11f1b-c72a-44fc-9803-344ace6f3349",
+            "f4941368-9963-4383-b809-d66d6516ffe3",
+            "4611ed12-d628-4ff4-91cd-baa29154d036",
+            "b6f444ad-f5c5-4841-9740-6aa445d33c5b",
+            "399f90c5-5532-4b18-8bd0-ba1bfd56fcef",
+            "005d493c-4ac9-43dd-8dc8-02ca5b880fca"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "ed1b2218-96e3-4f67-afee-45be463f92e9",
+            "73884f23-aeeb-4189-8b5c-f7d0c057d6c3",
+            "989f6150-d372-4457-b80b-43c738271483",
+            "43d146e5-7590-4b48-9532-5114735cc8bc"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

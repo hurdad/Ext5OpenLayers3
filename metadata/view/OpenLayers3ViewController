@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "openlayers3",
+        "designer|userClassName": "OpenLayers3ViewController"
+    },
+    "designerId": "005d493c-4ac9-43dd-8dc8-02ca5b880fca"
+}

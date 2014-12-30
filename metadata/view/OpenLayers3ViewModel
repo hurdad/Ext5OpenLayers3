@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "openlayers3",
+        "designer|userClassName": "OpenLayers3ViewModel"
+    },
+    "designerId": "399f90c5-5532-4b18-8bd0-ba1bfd56fcef"
+}

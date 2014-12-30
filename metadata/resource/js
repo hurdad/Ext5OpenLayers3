@@ -1,0 +1,15 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "js",
+        "includeInBundle": true,
+        "url": "ol.js"
+    },
+    "name": "js",
+    "designerId": "43d146e5-7590-4b48-9532-5114735cc8bc"
+}
